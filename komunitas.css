@@ -1,0 +1,74 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,400;1,500;1,600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+     /* Background */
+     --bg-primary: #141F25;
+
+     /* Font */
+     --style-one: 'Poppins';
+     --styletwo: 'Montserrat';
+
+     /* Font Size */
+     --small: 0.875rem;
+     --medium: 1rem;
+     --heavymedium: 1.25rem;
+
+     /* Color */
+     --white: #FFFFFF;
+     --orange: #B4990A;
+}
+
+body{
+     background-color: var(--bg-primary);
+     margin: 40px;
+}
+
+.top{
+     display: flex;
+     gap: 40px;
+     transition: 0.4s;
+}
+
+.card:hover{
+     opacity: 0.7;
+}
+
+.bottom{
+     margin-top: 5%;
+     display: grid;
+     grid-template-areas: 
+     'leftt'
+     'rightt';
+     grid-template-columns: 60% 40%;
+     grid-template-areas: 1fr;
+}
+
+.right{
+     grid-area: rightt;
+}
+
+.left{
+     grid-area: leftt;
+}
+
+.arrow{
+     color: var(--white);
+     text-decoration: none;
+}
+
+.arrow:hover{
+     color: var(--orange);
+     text-decoration: none;
+}
+
+@media only screen and (max-width: 760px) {
+     .card{
+          display: none;
+     }
+
+     .right img{
+          width: 518px;
+          height: 420px;
+     }
+}

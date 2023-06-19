@@ -1,0 +1,180 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,400;1,500;1,600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+     /* Background */
+     --bg-primary: #141F25;
+
+     /* Font */
+     --style-one: 'Poppins';
+     --styletwo: 'Montserrat';
+
+     /* Font Size */
+     --small: 0.875rem;
+     --medium: 1rem;
+     --heavymedium: 1.25rem;
+
+     /* Color */
+     --white: #FFFFFF;
+     --orange: #B4990A;
+
+}
+
+body{
+     margin: 40px;
+     background-color: var(--bg-primary);
+     display: grid;
+     grid-template-areas: 
+     'form'
+     'pict';
+     grid-template-columns: 50% 50%;
+     grid-template-rows: 1fr;
+}
+
+
+.verification{
+     grid-area: form;
+}
+
+.head-content{
+     display: flex;
+     align-items: center;
+     gap: 20px;
+}
+
+a{
+     color: var(--white);
+     transition: 0.3s;
+}
+
+a:hover{
+     color: var(--orange);
+     cursor: pointer;
+}
+
+.head-content h1{
+     font-family: var(--style-one);
+     color: var(--white);
+}
+
+.judul{
+     font-family: var(--style-one);
+     color: var(--white);
+     font-size: 1rem;
+     font-weight: 500;
+}
+
+.button-search-produk {
+     width: 500px;
+     height: 48px;
+     border-radius: 20px;
+     border: 2px solid var(--white);
+     display: flex;
+     opacity: 0.7;
+}
+
+
+.input {
+     width: 318px;
+     background: transparent;
+     border: none;
+     outline: none;
+     color: var(--white);
+     font-family: var(--style-one);
+     font-size: 0.9rem;
+     margin-left: 5%;
+}
+
+.container-payment{
+     display: flex;
+     gap: 20px;
+}
+
+.peyment{
+     width: 150px;
+}
+
+.buy{
+     background-color: #0A3C51;
+     margin-top: 20px;
+     width: 500px;
+     height: 48px;
+     border: none;
+     border-radius: 20px;
+     color: var(--white);
+     font-family: var(--style-one);
+     font-size: 1rem;
+     transition: 0.3s ease-in;
+}
+
+.buy:hover{
+     border: 2px solid var(--white);
+     background: transparent;
+     cursor: pointer;
+}
+
+.img{
+     margin: 6% 10%;
+     width: 50px;
+     height: 30px;
+}
+
+
+.produk-img{
+    width: 80%;
+    height: 80%;
+    animation: pulse 1s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+     from {
+          transform: scale(0.9);
+     }
+
+     to {
+          transform: scale(1);
+     }
+}
+
+
+@media only screen and (max-width: 760px) {
+     body{
+          display: block;
+     }
+
+     .head-content h1{
+          font-family: var(--style-one);
+          color: var(--white);
+          font-size: 1rem;
+     }
+
+     .button-search-produk {
+          width: 200px;
+          height: 48px;
+          border-radius: 20px;
+          border: 2px solid var(--white);
+          display: flex;
+          opacity: 0.7;
+     }
+
+     .buy{
+          background-color: #0A3C51;
+          margin-top: 20px;
+          width: 200px;
+          height: 48px;
+          border: none;
+          border-radius: 20px;
+          color: var(--white);
+          font-family: var(--style-one);
+          font-size: 1rem;
+          transition: 0.3s ease-in;
+     }
+
+     .produk-img{
+          margin: 10%;
+          width: 80%;
+          height: 80%;
+          animation: pulse 1s infinite ease-in-out alternate;
+      }
+     
+}

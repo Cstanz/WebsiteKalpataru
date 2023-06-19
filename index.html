@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KALPATARU | Bisayuk</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="file/assets/logo.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONT -->
+    <script
+      src="https://kit.fontawesome.com/8b732a955f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- Home -->
+    <div class="container" id="container">
+      <header>
+        <ul class="item-menu">
+          <img src="file/assets/logo.png" alt="" class="logo">
+          <div class="list">
+            <li class="list-items">
+              <a href="#container" class="menu-items">Home</a>
+            </li>
+            <li class="list-items">
+              <a href="#tentang" class="menu-items">Tentang</a>
+            </li>
+            <li class="list-items">
+              <a href="#produk" class="menu-items">Produk</a>
+            </li>
+            <li class="list-items">
+              <a href="#komunitas" class="menu-items">Komunitas</a>
+            </li>
+            <li class="list-items">
+              <a href="#tutorial" class="menu-items">Tutorial</a>
+            </li>
+          </div>
+
+          <div class="toggle-burger">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+        </ul>
+
+        <div class="list-dropdown">
+          <li class="list-items-dropdown">
+            <a href="#container" class="menu-items-dropdown">Home</a>
+          </li>
+          <li class="list-items-dropdown">
+            <a href="#tentang" class="menu-items-dropdown">Tentang</a>
+          </li>
+          <li class="list-items-dropdown">
+            <a href="#produk" class="menu-items-dropdown">Produk</a>
+          </li>
+          <li class="list-items-dropdown">
+            <a href="#komunitas" class="menu-items-dropdown">Komunitas</a>
+          </li>
+          <li class="list-items-dropdown">
+            <a href="#tutorial" class="menu-items-dropdown">Tutorial</a>
+          </li>
+        </div>
+      </header>
+
+      <div class="content-text-home" data-aos="zoom-out"data-aos-duration="1000">
+        <h1 class="title-text-home">
+          A Beatiful Environtment
+          <br />
+          Is A Healthy Environment
+        </h1>
+        <p class="p-text-home">
+          Bumi adalah ibu kita. Terlepas dari keinginan kita untuk menyakiti
+          <br />
+          ibu kita, dia akan selalu mencintai kita selamanya.
+        </p>
+        <button class="button-home">
+          <a class="teks" href="#tentang">
+            Mulai
+            <div class="icon-arrow">
+              <i class="fa-solid fa-arrow-down fa-bounce"></i>
+            </div>
+          </a>
+        </button>
+      </div>
+
+      <div class="fitur-home">
+        <div class="fitur-home-menu" data-aos="fade-up" data-aos-duration="1000">
+          <a href="" class="list-fitur">
+            <img
+              class="img-fitur"
+              src="file/assets/fitur1.png"
+              alt=""
+              srcset=""
+            />
+            <div class="text-fitur">
+              <p class="fitur-p">
+                Marketplace produk ramah lingkungan untuk mencegah pencemarann
+                lingkungan.
+              </p>
+              <img src="file/assets/01.png" alt="" class="img-p" />
+            </div>
+          </a>
+        </div>
+
+        <div class="fitur-home-menu" data-aos="fade-up" data-aos-duration="1400">
+          <a href="" class="list-fitur">
+            <img
+              class="img-fitur"
+              src="file/assets/fitur2.png"
+              alt=""
+              srcset=""
+            />
+            <div class="text-fitur">
+              <p class="fitur-p">
+                Temukan komunitas yang membantu menyalurkan ide <br />
+                dan visi mu.
+              </p>
+              <img src="file/assets/02.png" alt="" class="img-p" />
+            </div>
+          </a>
+        </div>
+
+        <div class="fitur-home-menu" data-aos="fade-up" data-aos-duration="1800">
+          <a href="" class="list-fitur">
+            <img
+              class="img-fitur"
+              src="file/assets/fitur3.png"
+              alt=""
+              srcset=""
+            />
+            <div class="text-fitur">
+              <p class="fitur-p">
+                Tutorial pencegahan kerusa- <br />
+                kan lingkungan yang bisa kamu lakukan di rumah.
+              </p>
+              <img src="file/assets/03.png" alt="" class="img-p" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tentang -->
+    <section class="tentang" id="tentang">
+      <div class="txt-content-tentang">
+        <div class="container-txt-tentang">
+          <h1 class="kategori-txt-tentang" data-aos="fade-right" data-aos-duration="1200">tentang</h1>
+          <h1 class="judul-txt-tentang" data-aos="fade-right" data-aos-duration="1600">
+            Keadaan Lingkungan <br />
+            kian menghawatirkan
+          </h1>
+          <p class="p-txt-tentang" data-aos="fade-right" data-aos-duration="1800">
+            Indonesia adalah daerah tropis dengan lingkungan iklim <br />
+            yang kondusif tetapi seiring berjalannya waktu kerusakan demi <br />
+            kerusakan lingkungan mulai terlihat karna ulah manusia yang tidak
+            bertanggung jawab.
+          </p>
+
+          <div class="video-tentang">
+            <video id="vid">
+              <source
+                src="file/assets/global-climate-change-cinematic-montage.mp4"
+                type="video/mp4"
+              />
+            </video>
+
+            <div class="container-button">
+              <button onclick="Play()" id="demo"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-content-tentang">
+        <div class="container-card-tentang" data-aos="fade-down" data-aos-duration="1800">
+          <div class="card-tentang-list img-satu">
+            <div class="teks-card">
+              <h1>PENCEMARANN</h1>
+              <p>
+                Penncemarann kantong plastik di Indonesia per tahunnya sama dengan
+                berat badan 21.315.000 orang.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-tentang-list img-dua">
+            <div class="teks-card">
+              <h1>PENEBANGAN</h1>
+              <p>
+                Penebangan pohon di kawasan hutan yang dilakukan tanpa izin sehingga hutan akan kehilangan fungsi pokok sebagai paru-paru dunia.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-tentang-list img-tiga">
+            <div class="teks-card">
+              <h1>POLUSI</h1>
+              <p>
+                 Polusi udara membunuh 9 juta orang per tahun dan dapat mengurangi usia harapan hidup rata-rata sebanyak dua tahun.
+             </P>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="persen-content-tentang"></div>
+    </section>
+
+    <!-- Marketplace -->
+    <section class="marketplace" id="produk">
+      <div class="head-content-produk" data-aos="fade-down" data-aos-duration="1200">
+        <h1 class="judul-produk">Produk Ramah Lingkungan</h1>
+
+        <div class="button-search-produk">
+          <div class="search-logo">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <input class="input" type="text" placeholder="Search" />
+        </div>
+      </div>
+
+      <div class="card-produk">
+        <div class="list-card-produk" data-aos="zoom-in" data-aos-duration="1200">
+          <img src="file/assets/img-produk1.png" alt="" class="produk-img" />
+
+          <div class="txt-produk">
+            <h1 class="judul-produk-txt">Recycle Bag</h1>
+            <p class="p-produk">
+              Tas yang terbuat dari 100% bahan ramah lingkungan dan terjamin
+              aman bagi anda.
+            </p>
+            <a href="produk.html">
+            <button class="beli-produk">Beli Sekarang</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="list-card-produk" data-aos="zoom-in" data-aos-duration="1400">
+          <img src="file/assets/img-produk2.png" alt="" class="produk-img" />
+
+          <div class="txt-produk">
+            <h1 class="judul-produk-txt">Recycle Shirt</h1>
+            <p class="p-produk">
+              Baju yang terbuat dari sisa-sisa kain yang sudah tidak terpakai dan tidak digunakan.
+            </p>
+            <button class="beli-produk">Beli Sekarang</button>
+          </div>
+        </div>
+
+        <div class="list-card-produk" data-aos="zoom-in" data-aos-duration="1600">
+          <img src="file/assets/img-produk3.png" alt="" class="produk-img" />
+
+          <div class="txt-produk">
+            <h1 class="judul-produk-txt">Recycled Cutlery</h1>
+            <p class="p-produk">
+              Peralatan makan ramah lingkungan yang berbahan dasar anti plastik dan logam
+            </p>
+            <button class="beli-produk">Beli Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="komunitas" id="komunitas">
+      <div class="txt-komunitas">
+        <div class="container-txt-komunitas">
+          <h1 class="kategori-txt-komunitas"  data-aos="fade-right" data-aos-duration="1200">Komunitas</h1>
+          <h1 class="judul-txt-komunitas"  data-aos="fade-right" data-aos-duration="1600">
+            Komunitas pecinta <br />
+            lingkungan
+          </h1>
+          <p class="p-txt-komunitas"  data-aos="fade-right" data-aos-duration="1800">
+          Bersama-sama, kita dapat menciptakan perubahan positif dan <br> menjaga keindahan bumi yang kita cintai. Dengan bergabung dalam <br> komunitas ini, kita akan belajar dan berbagi pengetahuan tentang praktik <br> ramah lingkungan, menginspirasi orang lain, dan menggalang dukungan <br> untuk upaya pelestarian
+          </p>
+          <button class="button-komunitas"  data-aos="fade-right" data-aos-duration="1800">
+            <a class="teks-btn" href="komunitas.html">
+              Gabung
+              <div class="icon-arrow-btn">
+                <i class="fa-solid fa-arrow-right fa-beat"></i>
+              </div>
+            </a>
+          </button>
+        </div>
+      </div>
+
+      <div class="konten-dua-komunitas" data-aos="zoom-in" data-aos-duration="1400">
+        <img src="file/assets/pict-komunitas.png" alt="" srcset="" class="img-komunitas">
+      </div>
+    </section>
+
+    <!-- Tutorial -->
+    <section class="tutorial" id="tutorial">
+      <div class="head-content-komunitas" data-aos="fade-down" data-aos-duration="1200"> 
+        <h1 class="judul-content-komunitas">Penanganan Lingkungan</h1>
+
+          <p class="p-txt-dua-komunitas">
+            Menyelamatkan lingkungan hidup dimulai dari tindakan awalmu <br> dengan membersihkan dan melestarikan.
+          </p>
+      </div>
+
+      <div class="card-komunitas">
+        <div class="list-card-komunitas" data-aos="fade-down" data-aos-duration="1200">
+          <img src="file/assets/tutor1.png" alt="" class="komunitas-img" />
+
+          <div class="txt-komunitas">
+            <h1 class="judul-komunitas-txt">Pembuatan Kompos</h1>
+            <p class="p-komunitas">
+              Proses menguraikan bahan organik seperti sisa makanan dan dedaunan menjadi pupuk alami yang berguna.
+            </p>
+            <button class="beli-komunitas">See more
+              <a href="artikel.html">
+              <div class="icon-arrow-btn-komunitas">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </a>
+            </button>
+          </div>
+        </div>
+
+        <div class="list-card-komunitas" data-aos="fade-down" data-aos-duration="1400">
+          <img src="file/assets/tutor2.png" alt="" class="komunitas-img" />
+
+          <div class="txt-komunitas">
+            <h1 class="judul-komunitas-txt">Memilah dengan benar</h1>
+            <p class="p-komunitas">
+              Proses memisahkan jenis sampah seperti organik, plastik, kertas, dan kaca dalam wadah terpisah.
+            </p>
+            <button class="beli-komunitas">See more
+              <div class="icon-arrow-btn-komunitas">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <div class="list-card-komunitas" data-aos="fade-down" data-aos-duration="1600">
+          <img src="file/assets/tutor3.png" alt="" class="komunitas-img" />
+
+          <div class="txt-komunitas">
+            <h1 class="judul-komunitas-txt">Vertical Planting</h1>
+            <p class="p-komunitas">
+              Metode menanam tanaman secara vertikal menggunakan dinding atau struktur bertingkat
+            </p>
+            <button class="beli-komunitas">See more
+              <div class="icon-arrow-btn-komunitas">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </button>
+          </div>
+      </div>
+    </section>
+
+    <!-- Media Sosial -->
+    <section class="medsos">
+      <div class="txt-medsos"  data-aos="zoom-in-up" data-aos-duration="1200">
+        <div class="h1-txt-medsos">
+          Jangan Malu Untuk Berbagi
+        </div>
+        <div class="p-txt-medsos">
+          Bagikan ke teman, keluarga, pacar atau saudaramu <br> agar dapat mengetahui pentingnya menjaga lingkungan
+        </div>
+      </div>
+
+      <div class="container-medsos"  data-aos="zoom-in" data-aos-duration="1400">
+    
+        <div class="container-all">
+          <div class="anm">
+            Instagram
+          </div>
+        <div class="medsos-menu instagram">    
+          <div class="icon-medsos ">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="container-all">
+          <div class="anm">
+            Twitter
+          </div>
+          <div class="medsos-menu twitter">    
+            <div class="icon-medsos">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </div>
+          </div>
+
+          <div class="container-all">
+            <div class="anm">
+              Facebook
+            </div>
+            <div class="medsos-menu facebook">    
+              <div class="icon-medsos">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+            </div>
+            </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="isi-footer">
+        <div class="about-footer">
+          <h1 class="jdl-about-footer">
+            KALPATARU
+          </h1>
+
+          <p class="p-about-footer">
+            Kalpataru adalah sebuah website yang berisi edukasi <br> pelestarian lingkungan dengan berfokus pada pemanfaatan <br> produk ramah lingkungan dalam kehidupan sehari hari
+          </p>
+        </div>
+
+        <div class="about-produk">
+          <h1 class="about-komunitas-footer">
+            Produk
+          </h1>
+          <li class="produk">
+            Produk Ramah Lingkungan
+          </li>
+
+          <li class="produk">
+            Keperluan Berkebun
+          </li>
+        </div>
+
+        <div class="about-komunitas">
+      <h1 class="about-komunitas-footer">
+        Komunitas
+      </h1>
+          <p class="komunitas-footer">
+            Join Sekarang
+          </p>
+        </div>
+
+        <div class="about-follow">
+          <h1 class="Follow">
+            Ikuti Kami
+          </h1>
+
+          <div class="icon-medsos-footer">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="trademarks">
+        <p class="td-txt">
+          Copyright © 2022. KALPATARU. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <!-- Javascript -->
+  <script src="main.js"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

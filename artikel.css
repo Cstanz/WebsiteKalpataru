@@ -1,0 +1,95 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,400;1,500;1,600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+     /* Background */
+     --bg-primary: #141F25;
+
+     /* Font */
+     --style-one: 'Poppins';
+     --styletwo: 'Montserrat';
+
+     /* Font Size */
+     --small: 0.875rem;
+     --medium: 1rem;
+     --heavymedium: 1.25rem;
+
+     /* Color */
+     --white: #FFFFFF;
+     --orange: #B4990A;
+
+}
+
+body {
+     margin: 40px;
+     background-color: var(--bg-primary);
+}
+
+.top {
+     display: grid;
+     grid-template-areas:
+          'left'
+          'right';
+     grid-template-columns: 40% 60%;
+     color: var(--white);
+     font-family: var(--style-one);
+}
+
+.gmbr img {
+     margin-left: 40px;
+     animation: pulse 1s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+     from {
+          transform: scale(0.9);
+     }
+
+     to {
+          transform: scale(1);
+     }
+}
+
+.arrow{
+     color: var(--white);
+     text-decoration: none;
+}
+
+.arrow:hover{
+     color: var(--orange);
+     text-decoration: none;
+}
+
+.author {
+     display: flex;
+     font-family: var(--style-one);
+     gap: 20px;
+     align-items: center;
+}
+
+.tulis {
+     font-size: 1rem;
+}
+
+.tgl {
+     font-weight: 400;
+     font-size: 14px;
+     opacity: 0.7;
+}
+
+.jdl {
+     margin-top: -15px;
+     font-size: 2.5rem;
+}
+
+.bottom {
+     margin-top: 5%;
+     color: var(--white);
+     font-family: var(--styletwo);
+     font-weight: 200;
+     font-size: 20px;
+     line-height: 30px;
+     opacity: 0.7;
+     letter-spacing: 0.005em;
+     text-align: justify;
+}

@@ -1,0 +1,1458 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,400;1,500;1,600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+     /* Background */
+     --bg-primary: #141F25;
+
+     /* Font */
+     --style-one: 'Poppins';
+     --styletwo: 'Montserrat';
+
+     /* Font Size */
+     --small: 0.875rem;
+     --medium: 1rem;
+     --heavymedium: 1.25rem;
+
+     /* Color */
+     --white: #FFFFFF;
+     --orange: #B4990A;
+
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     text-decoration: none;
+     list-style: none;
+}
+
+body {
+     background-color: var(--bg-primary);
+     margin: 40px;
+     display: grid;
+     grid-template-areas:
+          'container'
+          'header'
+          'tentang'
+          'produk'
+          'komunitas'
+          'tutorial'
+          'medsos'
+          'footer';
+     grid-template-rows: 681px 80px 680px 780px 680px 580px 380px 280px;
+     grid-template-columns: 1fr;
+}
+
+/* Header */
+
+.container {
+     grid-area: container;
+     background-image: url(file/assets/heroimage.png);
+     margin: -40px;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.container::after {
+     content: '';
+     position: absolute;
+     left: 0;
+     bottom: -22%;
+     height: 40vh;
+     width: 100%;
+     background: linear-gradient(to top, rgb(20, 31, 37), rgba(0, 0, 0, 0));
+}
+
+header {
+     grid-area: header;
+     margin: 40px;
+}
+
+.item-menu {
+     display: flex;
+     align-items: center;
+}
+
+.logo {
+     color: var(--white);
+     font-family: var(--style-one);
+     font-size: 1.2rem;
+}
+
+.list {
+     display: flex;
+     margin: auto;
+     gap: 40px;
+     align-items: center;
+}
+
+.menu-items {
+     color: var(--white);
+     font-family: var(--style-one);
+     font-weight: 500;
+}
+
+.menu-items::after {
+     margin: 2px auto;
+     content: "";
+     background-color: #E4C000;
+     height: 3px;
+     border-radius: 100px;
+     display: block;
+     transition: ease-out 0.3s;
+     width: 0;
+}
+
+.menu-items:hover::after {
+     width: 60%;
+}
+
+/* Toggle Buttons */
+.toggle-burger {
+     color: var(--white);
+     display: none;
+     margin-right: 5%;
+     cursor: pointer;
+}
+
+.list-dropdown {
+     display: none;
+     height: 0;
+     position: absolute;
+     right: 2rem;
+     width: 200px;
+     background: rgba(255, 255, 255, 0.20);
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(8.7px);
+     -webkit-backdrop-filter: blur(8.7px);
+     border-radius: 10px;
+     margin-top: 10px;
+     transition: 0.10s ease-in cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.list-dropdown.open {
+     height: 236.88px;
+     display: block;
+     transition: height display 0.10s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.list-dropdown .list-items-dropdown {
+     display: flex;
+     justify-content: center;
+}
+
+.menu-items-dropdown {
+     color: var(--white);
+     padding: 0.7rem;
+     font-family: var(--style-one);
+     transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.menu-items-dropdown:hover {
+     color: #E4C000;
+}
+
+/* Sticky Button */
+.sticky {
+     margin-top: 30px;
+     position: fixed;
+     background: rgba(255, 255, 255, 0.12);
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(9.7px);
+     -webkit-backdrop-filter: blur(9.7px);
+     width: 91%;
+     margin-right: 9%;
+     height: 40px;
+     padding: 10px 20px 10px;
+     border-radius: 20px;
+     z-index: 1000;
+     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Home */
+.content-text-home {
+     margin: 120px 40px;
+     color: var(--white);
+}
+
+.title-text-home {
+     font-family: var(--styletwo);
+     font-size: 52px;
+     padding-bottom: 20px;
+     font-weight: 600;
+}
+
+.p-text-home {
+     font-family: var(--style-one);
+     font-size: var(--heavymedium);
+     opacity: 50%;
+     padding-bottom: 40px;
+}
+
+.button-home {
+     background: transparent;
+     border: 3px solid var(--white);
+     width: 124px;
+     height: 50px;
+     border-radius: 20px;
+
+}
+
+.button-home .teks {
+     color: var(--white);
+     font-family: var(--style-one);
+     font-weight: 500;
+     font-size: 1rem;
+     cursor: pointer;
+     padding: 0 15% 0 16%;
+     display: flex;
+     align-items: center;
+}
+
+.icon-arrow {
+     color: var(--white);
+     font-size: 1rem;
+     width: 20px;
+     padding-left: 20%;
+}
+
+.button-home:hover {
+     background-color: var(--orange);
+     border: none;
+     transition: ease-in 0.3s;
+}
+
+
+.fitur-home {
+     display: flex;
+     margin: 20% 40px;
+     gap: 50px;
+}
+
+.fitur-home-menu {
+     z-index: 100;
+     background: rgba(255, 255, 255, 0.12);
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(4.7px);
+     -webkit-backdrop-filter: blur(4.7px);
+     border-radius: 10px;
+     width: 387px;
+     height: 126px;
+}
+
+.list-fitur {
+     display: flex;
+     align-items: center;
+}
+
+.img-fitur {
+     margin: 5%;
+}
+
+.fitur-p {
+     font-family: 'Poppins';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+     color: var(--white);
+     opacity: 0.55;
+}
+
+.fitur-p:hover {
+     text-decoration: underline;
+}
+
+.img-p {
+     margin-left: 80%;
+}
+
+
+
+/* Tentang */
+.tentang {
+     grid-area: tentang;
+     z-index: 100;
+     display: grid;
+     grid-template-areas:
+          'textt'
+          'hover';
+     grid-template-columns: 40% 60%;
+     grid-template-rows: 1fr;
+}
+
+.txt-content-tentang {
+     grid-area: textt;
+}
+
+.container-txt-tentang {
+     margin-top: 25%;
+}
+
+.kategori-txt-tentang {
+     color: var(--orange);
+     text-transform: uppercase;
+     font-size: 14px;
+     font-family: var(--styletwo);
+     margin-bottom: 10px;
+}
+
+.judul-txt-tentang {
+     color: var(--white);
+     text-transform: capitalize;
+     font-family: var(--style-one);
+     font-size: 40px;
+     margin-bottom: 12px;
+}
+
+.p-txt-tentang {
+     color: var(--white);
+     font-family: var(--style-one);
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 24px;
+     letter-spacing: 0.005em;
+     color: #FFFFFF;
+     opacity: 0.75;
+}
+
+.video-tentang {
+     margin-top: 10%;
+}
+
+#vid {
+     width: 251px;
+     height: 138px;
+     border-radius: 20px;
+}
+
+.container-button {
+     position: absolute;
+     width: 40px;
+     height: 40px;
+     background: var(--orange);
+     border: none;
+     border-radius: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-left: 14%;
+     margin-top: -2%;
+     z-index: 1000;
+}
+
+#demo {
+     margin-left: 15%;
+     width: 20px;
+     height: 20px;
+     border: none;
+}
+
+.container-card-tentang {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.container-card-tentang {
+     margin: 20% 0 0 5%;
+     gap: 30px;
+}
+
+.card-tentang-list {
+     background-color: #B4990A;
+     width: 150px;
+     height: 448px;
+     border-radius: 10px;
+     transition: width 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+}
+
+.container-card-tentang .card-tentang-list:hover {
+     gap: 40px;
+}
+
+.card-tentang-list:hover {
+     width: 320px;
+}
+
+.img-satu {
+     background-image: url(file/assets/card1.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+.img-dua {
+     background-image: url(file/assets/card2.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+.img-tiga {
+     background-image: url(file/assets/card3.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+.teks-card {
+     color: var(--white);
+     font-family: var(--style-one);
+     text-align: center;
+     height: 100%;
+     margin: 50% 10%;
+     opacity: 0;
+     transition: opacity 0.1s ease-out;
+}
+
+.card-tentang-list .teks-card:hover {
+     opacity: 100%;
+}
+
+/* Marketplace */
+.marketplace {
+     grid-area: produk;
+     background-image: url(file/assets/bg-produk.png);
+     margin: 0 -40px;
+}
+
+.marketplace::before {
+     content: '';
+     position: absolute;
+     left: 0;
+     opacity: 98%;
+     height: 20vh;
+     width: 100%;
+     background: linear-gradient(to bottom, rgb(20, 31, 37), rgba(0, 0, 0, 0));
+     z-index: 10;
+}
+
+.marketplace::after {
+     content: '';
+     position: absolute;
+     left: 0;
+     bottom: -262%;
+     height: 20vh;
+     width: 100%;
+     background: linear-gradient(to top, rgb(20, 31, 37), rgba(0, 0, 0, 0));
+     z-index: 100;
+}
+
+.head-content-produk {
+     margin-top: 8%;
+}
+
+.judul-produk {
+     color: var(--white);
+     text-align: center;
+     font-family: var(--style-one);
+     font-size: 1.8rem;
+}
+
+.button-search-produk {
+     width: 398px;
+     height: 48px;
+     border-radius: 20px;
+     border: 2px solid var(--white);
+     margin: 2% auto;
+     display: flex;
+
+}
+
+.search-logo {
+     margin: 4% 5% 0;
+     color: var(--white);
+     align-items: center;
+}
+
+.Search {
+     color: var(--white);
+     font-family: var(--style-one);
+     font-size: 1.2rem;
+     font-weight: 400;
+}
+
+.input {
+     width: 318px;
+     background: transparent;
+     border: none;
+     outline: none;
+     color: var(--white);
+     font-family: var(--style-one);
+     font-size: 1rem;
+}
+
+.card-produk {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 40px;
+}
+
+.list-card-produk {
+     margin-top: 3%;
+     width: 272px;
+     height: 366px;
+     background: rgba(255, 255, 255, 0.2);
+     border-radius: 16px;
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(5px);
+     -webkit-backdrop-filter: blur(5px);
+     border: 1px solid rgba(255, 255, 255, 0.3);
+     transition: 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.list-card-produk:hover {
+     margin-top: -4%;
+     transition: 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.produk-img {
+     margin: 5% 9% 2%;
+}
+
+.txt-produk {
+     margin: 2% 9%;
+     opacity: 80%;
+}
+
+.judul-produk-txt {
+     color: var(--white);
+     font-size: 1.2rem;
+     font-family: var(--style-one);
+     font-weight: 500;
+     margin-bottom: 2%;
+}
+
+.p-produk {
+     color: var(--white);
+     font-family: var(--style-one);
+     font-weight: 400;
+     font-size: 12px;
+     line-height: 24px;
+     letter-spacing: 0.005em;
+     color: #FFFFFF;
+     opacity: 0.75;
+     margin-bottom: 2%;
+}
+
+.beli-produk {
+     margin: 4% 20%;
+     border: 2px solid var(--orange);
+     background: transparent;
+     height: 40px;
+     width: 120px;
+     border-radius: 20px;
+     color: var(--white);
+     font-family: var(--style-one);
+}
+
+.beli-produk:hover {
+     background-color: var(--orange);
+     border: none;
+     text-decoration: underline;
+     cursor: pointer;
+}
+
+/* Komunitas */
+.komunitas {
+     grid-area: komunitas;
+     z-index: 100;
+     display: grid;
+     grid-template-areas:
+          'satu'
+          'dua';
+     grid-template-columns: 60% 40%;
+     grid-template-rows: 1fr;
+}
+
+.txt-komunitas {
+     grid-area: satu;
+}
+
+.container-txt-komunitas {
+     margin-top: 16%;
+}
+
+.kategori-txt-komunitas {
+     color: var(--orange);
+     text-transform: uppercase;
+     font-size: 14px;
+     font-family: var(--styletwo);
+     margin-bottom: 10px;
+}
+
+.judul-txt-komunitas {
+     color: var(--white);
+     text-transform: capitalize;
+     font-family: var(--style-one);
+     font-size: 40px;
+     margin-bottom: 20px;
+}
+
+.p-txt-komunitas {
+     color: var(--white);
+     font-family: var(--style-one);
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 24px;
+     letter-spacing: 0.005em;
+     color: #FFFFFF;
+     opacity: 0.75;
+     margin-bottom: 20px;
+}
+
+.button-komunitas {
+     background: transparent;
+     border: 3px solid var(--white);
+     width: 134px;
+     height: 50px;
+     border-radius: 20px;
+}
+
+
+.button-komunitas .teks-btn {
+     color: var(--white);
+     font-family: var(--style-one);
+     font-weight: 500;
+     font-size: 1rem;
+     cursor: pointer;
+     padding: 0 15% 0 16%;
+     display: flex;
+     align-items: center;
+}
+
+.icon-arrow-btn {
+     color: var(--white);
+     font-size: 1rem;
+     width: 20px;
+     padding-left: 15%;
+}
+
+.button-komunitas:hover {
+     background-color: var(--orange);
+     border: none;
+     transition: ease-in 0.4s;
+}
+
+
+.img-komunitas {
+     margin: 22% 5%;
+     animation: pulse 1s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+     from {
+          transform: scale(0.9);
+     }
+
+     to {
+          transform: scale(1);
+     }
+}
+
+
+
+/* Tutorial */
+.tutorial {
+     grid-area: tutorial;
+}
+
+.head-content-komunitas {
+     text-align: center;
+}
+
+.judul-content-komunitas {
+     color: var(--white);
+     text-align: center;
+     font-family: var(--style-one);
+     font-size: 1.8rem;
+}
+
+.p-txt-dua-komunitas {
+     color: var(--white);
+     font-family: var(--style-one);
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 24px;
+     letter-spacing: 0.005em;
+     color: #FFFFFF;
+     opacity: 0.75;
+     margin-top: 10px;
+}
+
+.card-komunitas {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 50px;
+     margin-top: 2%;
+}
+
+.list-card-komunitas {
+     margin-top: 3%;
+     width: 272px;
+     height: 366px;
+     transition: 0.4s ease;
+}
+
+.txt-komunitas {
+     margin: 5% 0;
+     opacity: 80%;
+}
+
+
+.judul-komunitas-txt {
+     color: var(--white);
+     font-size: 1.2rem;
+     font-family: var(--style-one);
+     font-weight: 500;
+     margin-bottom: 2%;
+}
+
+.p-komunitas {
+     color: var(--white);
+     font-family: var(--style-one);
+     font-weight: 400;
+     font-size: 12px;
+     line-height: 24px;
+     letter-spacing: 0.005em;
+     color: #FFFFFF;
+     opacity: 0.75;
+     margin-bottom: 2%;
+}
+
+.beli-komunitas {
+     margin: 4% 0;
+     border: none;
+     background: transparent;
+     height: 40px;
+     width: 120px;
+     border-radius: 20px;
+     color: var(--white);
+     font-family: var(--style-one);
+     display: flex;
+     transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.beli-komunitas:hover {
+     opacity: 0.75;
+     border: none;
+     text-decoration: underline;
+     cursor: pointer;
+}
+
+.icon-arrow-btn-komunitas {
+     color: var(--white);
+     font-size: 14px;
+     width: 20px;
+     padding-left: 5%;
+     transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.beli-komunitas .icon-arrow-btn-komunitas:hover {
+     padding-left: 10%;
+}
+
+
+/* Media Sosial */
+.medsos {
+     grid-area: medsos;
+}
+
+.txt-medsos {
+     text-align: center;
+}
+
+.h1-txt-medsos {
+     font-family: 'Poppins';
+     font-style: normal;
+     font-weight: 600;
+     font-size: 32px;
+     line-height: 58px;
+     /* identical to box height, or 121% */
+
+     letter-spacing: 0.005em;
+
+     color: #FFFFFF;
+}
+
+.p-txt-medsos {
+     font-family: 'Poppins';
+     font-style: normal;
+     font-weight: 600;
+     font-size: 14px;
+     /* or 150% */
+
+     text-align: center;
+     letter-spacing: 0.005em;
+
+     color: rgba(255, 255, 255, 0.5);
+}
+
+.container-medsos {
+     margin-top: 3%;
+     justify-content: center;
+     display: flex;
+     gap: 60px;
+}
+
+.medsos-menu {
+     border: 2px solid var(--white);
+     width: 55px;
+     height: 55px;
+     border-radius: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.icon-medsos {
+     color: var(--white);
+     font-size: 1.5rem;
+}
+
+.anm {
+     background: rgba(255, 255, 255, 0.12);
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(9.7px);
+     -webkit-backdrop-filter: blur(9.7px);
+     padding: 5px 10px;
+     margin: 10px auto;
+     border-radius: 25px;
+     z-index: 2;
+     pointer-events: none;
+     opacity: 0;
+     color: var(--white);
+     font-family: var(--style-one);
+     font-size: 14px;
+     transition: 0.3s ease-in-out;
+}
+
+.container-all:hover .anm {
+     opacity: 1;
+     pointer-events: auto;
+}
+
+.instagram:hover {
+     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+     cursor: pointer;
+}
+
+.facebook:hover {
+     background: #3b5998;
+     cursor: pointer;
+}
+
+.twitter:hover {
+     background: #007bb5;
+     cursor: pointer;
+}
+
+/* Footer */
+footer {
+     grid-area: footer;
+     margin-bottom: -40px;
+     display: grid;
+     grid-template-areas:
+          'isi'
+          'trademarks';
+     grid-template-columns: 1fr;
+     grid-template-rows: 90% 10%;
+}
+
+.isi-footer {
+     grid-area: isi;
+     display: flex;
+     gap: 100px;
+     color: var(--white);
+     font-family: var(--style-one);
+}
+
+.jdl-about-footer {
+     font-size: 1.4rem;
+     margin-bottom: 4%;
+     color: var(--orange);
+}
+
+.p-about-footer {
+     font-size: 14px;
+     opacity: 0.75;
+}
+
+.about-komunitas-footer,
+.about-komunitas-footer,
+.Follow {
+     color: var(--orange);
+     font-size: 1.2rem;
+     margin-bottom: 8%;
+}
+
+.produk,
+.komunitas-footer {
+     font-size: 14px;
+     margin-bottom: 8%;
+     opacity: 0.75;
+}
+
+.icon-medsos-footer i {
+     margin: 0 6%;
+}
+
+.icon-medsos-footer i:hover {
+     color: var(--orange);
+}
+
+.komunitas-footer:hover {
+     text-decoration: underline;
+}
+
+.produk:hover {
+     text-decoration: underline;
+}
+
+.p-about-footer:hover {
+     text-decoration: underline;
+}
+
+.trademarks {
+     grid-area: trademarks;
+}
+
+.td-txt {
+     font-family: 'Poppins';
+     font-style: normal;
+     font-weight: 200;
+     font-size: 14px;
+     line-height: 26px;
+     text-align: center;
+     letter-spacing: 0.5px;
+     color: #FFFFFF;
+     opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Mobile */
+@media only screen and (max-width: 760px) {
+     body {
+          background-color: var(--bg-primary);
+          margin: 40px;
+          display: grid;
+          grid-template-areas:
+               'container'
+               'header'
+               'tentang'
+               'produk'
+               'komunitas'
+               'medsos'
+               'footer';
+          grid-template-rows: 481px 80px 680px 380px 280px 280px 210px;
+          grid-template-columns: 1fr;
+     }
+
+     /* Home */
+     .container::after {
+          height: 481px;
+          bottom: -35%;
+          display: none;
+     }
+
+     header.sticky {
+          position: fixed;
+          width: 75%;
+          height: 30px;
+          margin: 5%;
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+          padding-top: 15px;
+     }
+
+     .logo {
+          width: 82px;
+     }
+
+     .list {
+          display: none;
+     }
+
+     .item-menu {
+          justify-content: space-between;
+     }
+
+     .toggle-burger {
+          display: block;
+     }
+
+     .list-dropdown {
+          margin-top: 20px;
+     }
+
+     .sticky .list-dropdown {
+          margin-top: 25px;
+          margin-right: -25px;
+     }
+
+     /* Home */
+     .content-text-home {
+          z-index: 100;
+          margin-top: 120px;
+     }
+
+     .title-text-home {
+          font-size: 1.6rem;
+     }
+
+     .p-text-home {
+          font-size: 0.65rem;
+     }
+
+     .button-home {
+          width: 96px;
+          height: 40px;
+     }
+
+     .button-home .teks {
+          color: var(--white);
+          font-family: var(--style-one);
+          font-weight: 500;
+          font-size: 0.7rem;
+          cursor: pointer;
+          padding: 0 15% 0 16%;
+          display: flex;
+          align-items: center;
+     }
+
+     .icon-arrow {
+          color: var(--white);
+          font-size: 0.75rem;
+          width: 20px;
+          padding-left: 20%;
+     }
+
+     .fitur-home {
+          display: none;
+     }
+
+     /* .fitur-home {
+          position: relative;
+          max-width: 14rem;
+          gap: 50px;
+          overflow-x: auto;
+     } */
+
+     .fitur-home-menu {
+          display: flex;
+          scroll-behavior: smooth;
+          width: 80%;
+     }
+
+     .img-p {
+          margin-left: 20px;
+     }
+
+     .fitur-p {
+          font-size: 10px;
+          display: none;
+     }
+
+
+     /* Tentang */
+     .tentang {
+          display: block;
+     }
+
+     .container-txt-tentang {
+          margin-top: 10%;
+          text-align: center;
+          margin-bottom: 10%;
+     }
+
+     .judul-txt-tentang {
+          font-size: 1rem;
+     }
+
+     .p-txt-tentang {
+          display: none;
+     }
+
+     .container-card-tentang {
+          margin: 15%;
+          gap: 10px;
+     }
+
+     .card-tentang-list {
+          background-color: #B4990A;
+          width: 40px;
+          height: 348px;
+          border-radius: 10px;
+          transition: width 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+     }
+
+     .teks-card h1 {
+          font-size: 1rem;
+     }
+
+     .container-card-tentang .card-tentang-list:hover {
+          gap: 60px;
+     }
+
+     .card-tentang-list:hover {
+          width: 60px;
+     }
+
+     .teks-card h1 {
+          writing-mode: vertical-lr;
+          text-orientation: upright;
+     }
+
+     .teks-card p {
+          display: none;
+     }
+
+     #vid {
+          width: 90%;
+          height: 40%;
+     }
+
+     .container-button {
+          margin-left: 30%;
+          margin-top: -10%;
+          margin-bottom: 15%;
+     }
+
+     /* Marketplace */
+     .marketplace::before {
+          display: none;
+     }
+
+     .marketplace::after {
+          display: none;
+     }
+
+     .head-content-produk {
+          margin-top: 20%;
+     }
+
+     .judul-produk {
+          font-size: 1rem;
+     }
+
+     .button-search-produk {
+          width: 198px;
+          height: 28px;
+          border-radius: 20px;
+          border: 2px solid var(--white);
+          margin: 2% auto;
+          display: flex;
+     }
+
+     .search-logo {
+          margin: 4% 5% 0;
+          color: var(--white);
+          align-items: center;
+     }
+
+     .Search {
+          color: var(--white);
+          font-family: var(--style-one);
+          font-size: 0.7rem;
+          font-weight: 400;
+     }
+
+     .input {
+          width: 318px;
+          background: transparent;
+          border: none;
+          outline: none;
+          color: var(--white);
+          font-family: var(--style-one);
+          font-size: 0.7rem;
+     }
+
+
+     .card-produk {
+          display: flex;
+          position: relative;
+          max-width: 16rem;
+          gap: 20px;
+          overflow-x: auto;
+          margin: 10% auto;
+     }
+
+     .list-card-produk {
+          scroll-behavior: smooth;
+          width: 80%;
+          margin-top: 3%;
+          width: 172px;
+          height: 146px;
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 16px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(5px);
+          -webkit-backdrop-filter: blur(5px);
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          transition: 0.4s ease;
+     }
+
+     .list-card-produk:hover {
+          margin-top: -4%;
+     }
+
+     .produk-img {
+          margin: 5% 9% 2%;
+          width: 60px;
+     }
+
+     .judul-produk-txt {
+          color: var(--white);
+          font-size: 12px;
+          font-family: var(--style-one);
+          font-weight: 500;
+          margin-bottom: 2%;
+     }
+
+     .p-produk {
+          display: none;
+     }
+
+     .beli-produk {
+          margin: 20% 1% 0 2%;
+          border: 2px solid var(--orange);
+          background: transparent;
+          height: 20px;
+          width: 60px;
+          border-radius: 15px;
+          color: var(--white);
+          font-family: var(--style-one);
+          font-size: 8px;
+     }
+
+     .beli-produk:hover {
+          background-color: var(--orange);
+          border: none;
+          text-decoration: underline;
+          cursor: pointer;
+     }
+
+     /* Komunitas */
+     .txt-komunitas {
+          text-align: center;
+          justify-content: center;
+          margin-right: -60%;
+     }
+
+     .kategori-txt-komunitas {
+          font-size: 12px;
+     }
+
+     .judul-txt-komunitas {
+          font-size: 1.2rem;
+     }
+
+     .p-txt-komunitas {
+          display: none;
+     }
+
+     .konten-dua-komunitas {
+          display: none;
+     }
+
+     .button-komunitas {
+          background: transparent;
+          border: 3px solid var(--white);
+          width: 84px;
+          height: 40px;
+          border-radius: 20px;
+     }
+
+
+     .button-komunitas .teks-btn {
+          color: var(--white);
+          font-family: var(--style-one);
+          font-weight: 500;
+          font-size: 8px;
+          cursor: pointer;
+          padding: 0 15% 0 16%;
+          display: flex;
+          align-items: center;
+     }
+
+     .icon-arrow-btn {
+          color: var(--white);
+          font-size: 1rem;
+          width: 20px;
+          padding-left: 20%;
+     }
+
+     .button-komunitas:hover {
+          background-color: var(--orange);
+          border: none;
+          transition: ease-in 0.4s;
+     }
+
+     /* Tutorial */
+     .tutorial {
+          display: none;
+     }
+
+     /* Medsos */
+
+     .h1-txt-medsos {
+          font-size: 1rem;
+     }
+
+     .p-txt-medsos {
+          font-size: 50%;
+     }
+
+     .container-medsos {
+          margin-top: 20%;
+          justify-content: center;
+          display: flex;
+          gap: 30px;
+     }
+
+     .medsos-menu {
+          border: 2px solid var(--white);
+          width: 35px;
+          height: 35px;
+          border-radius: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .icon-medsos {
+          color: var(--white);
+          font-size: 1rem;
+     }
+
+     .anm {
+          background: rgba(255, 255, 255, 0.12);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(9.7px);
+          -webkit-backdrop-filter: blur(9.7px);
+          padding: 5px 10px;
+          margin: 10px auto;
+          border-radius: 25px;
+          z-index: 2;
+          pointer-events: none;
+          display: none;
+          color: var(--white);
+          font-family: var(--style-one);
+          font-size: 14px;
+          transition: 0.3s ease-in-out;
+     }
+
+     .container-all:hover .anm {
+          display: none;
+          pointer-events: auto;
+     }
+
+     /* Footer */
+
+     .jdl-about-footer {
+          font-size: 1rem;
+     }
+
+     .p-about-footer {
+          font-size: 50%;
+     }
+
+     .Follow {
+          font-size: 12px;
+     }
+
+     .about-produk {
+          display: none;
+     }
+
+     .about-komunitas {
+          display: none;
+     }
+
+
+     .td-txt {
+          font-size: 8px;
+     }
+}
